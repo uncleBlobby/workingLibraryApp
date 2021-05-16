@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+
+        <div id="mainContainer">
+            <div id="header">
+                <div id="addBookBtn" onclick="openForm()">
+                    Add Book
+                </div>
+            </div>
+            <div id="modalPopup" class="modal">
+                <div class="modal-content">
+                    <span class="close">&times;</span>
+                    <div id="modalHeader">
+                    Add book to library:
+                    </div>
+                    <div id="addBookDiv">
+                    <form id="addBookForm">
+                        <label for="btitle">Title:  </label>
+                        <input type="text" id="btitle" name="btitle" value="Title"><br>
+                        <label for="bauthor">Author:</label>
+                        <input type="text" id="bauthor" name="bauthor" value="Author"><br>
+                        <label for="bpages">Pages:  </label>
+                        <input type="text" id="bpages" name="bpages" value="Pages" size="5"><br>
+                        <label for="bisread">Read: </label>
+                        <input type="radio" id="bisread" name="bisread" value="yes">
+                        <label for="bisread">Yes</label>
+                        <input type="radio" id="bisnotread" name="bisread" value="no">
+                        <label for="bisread">No</label>
+                    </form>
+                    </div>
+                    <span class="addBook">&crarr;</span>
+                </div>
+            </div>
+            <div id="libraryDisplay">
+
+            </div>
+        </div>
+
+        
+        <script src="main.js"></script>
+    </body>
+</html>
